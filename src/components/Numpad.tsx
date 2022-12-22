@@ -2,7 +2,7 @@ import Button from "./Button";
 import contents from "../data/ButtonContents.json";
 
 export default function Numpad () {
-  const onClick = () => {
+  const handleClick = () => {
     console.log("clicked");
   };
 
@@ -10,7 +10,7 @@ export default function Numpad () {
     <div className="numpad">
       {contents.map((content, index) => {
         return (
-          <Button key={index} onClick={onClick}>
+          <Button key={index} onClick={handleClick}>
             {content}
           </Button>
         );
