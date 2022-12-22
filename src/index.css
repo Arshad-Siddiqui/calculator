@@ -51,3 +51,7 @@ body {
 .plus {
   grid-row: span 2;
 }
+
+.equal {
+  background-color: orange;
+}
