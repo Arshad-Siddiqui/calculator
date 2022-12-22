@@ -1,6 +1,6 @@
 export default function Number ({ number }: { number: number }) {
   return (
-    <button>
+    <button className="number-button">
       {number}
     </button>
   )

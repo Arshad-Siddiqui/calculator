@@ -1,5 +1,5 @@
 export default function Board () {
   return (
-    <div className="Board">Board</div>
+    <div className="board">Board</div>
   )
 }
