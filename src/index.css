@@ -55,3 +55,7 @@ body {
 .equal {
   background-color: orange;
 }
+
+.equal:hover {
+  background-color: #f5a623;
+}
