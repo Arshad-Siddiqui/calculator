@@ -1,27 +1,8 @@
 import Button from "./Button";
+import contents from "../data/ButtonContents.json";
 
 export default function Board() {
-  const contents = [
-    "C",
-    "AC",
-    "%",
-    "X",
-    7,
-    8,
-    9,
-    "/",
-    4,
-    5,
-    6,
-    "-",
-    1,
-    2,
-    3,
-    "+",
-    0,
-    ".",
-    "=",
-  ];
+  
   const onClick = () => {
     console.log("clicked");
   };
