@@ -14,4 +14,7 @@ body {
 .board {
   max-width: 500px;
   background-color: #313639;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
