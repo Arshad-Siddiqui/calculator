@@ -17,6 +17,15 @@ body {
   padding: 10px;
 }
 
+.display {
+  background-color: #313639;
+  color: #FAF9F6;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
 .numpad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
