@@ -1,3 +1,3 @@
 export default interface DisplayProps {
-  children: number | string;
+  children: (number | string)[];
 }

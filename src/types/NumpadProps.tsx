@@ -1,3 +1,3 @@
 export default interface NumpadProps {
-  setDisplay: (value: number) => void;
+  setDisplay: (value: (number|string)[]) => void;
 }
