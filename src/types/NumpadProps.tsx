@@ -1,3 +1,3 @@
 export default interface NumpadProps {
-  setDisplay: (value: (number|string)[]) => void;
+  setDisplay: (value: React.SetStateAction<(string|number)[]>) => void;
 }

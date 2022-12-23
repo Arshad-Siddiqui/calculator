@@ -1,4 +1,4 @@
 export default interface ButtonProps {
   children: number | string;
-  setDisplay: (value: (number|string)[]) => void;
+  setDisplay: (value: React.SetStateAction<(string|number)[]>) => void;
 }
