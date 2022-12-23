@@ -6,7 +6,7 @@ export default function Button (props: ButtonProps) {
   const isEqual = children == '=' ? 'equal' : ''
 
   return (
-    <button className={`button ${isTall} ${isEqual}`} onClick={props.onClick}>
+    <button className={`button ${isTall} ${isEqual}`}>
       {children}
     </button>
   )
