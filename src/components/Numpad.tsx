@@ -1,7 +1,8 @@
 import Button from "./Button";
 import contents from "../data/ButtonContents.json";
+import NumpadProps from "../types/NumpadProps";
 
-export default function Numpad () {
+export default function Numpad ({ setDisplay }: NumpadProps) {
   const handleClick = () => {
     console.log("clicked");
   };
@@ -10,7 +11,7 @@ export default function Numpad () {
     <div className="numpad">
       {contents.map((content, index) => {
         return (
-          <Button key={index} onClick={handleClick}>
+          <Button key={index} onClick={handleClick} setDisplay={setDisplay} >
             {content}
           </Button>
         );
