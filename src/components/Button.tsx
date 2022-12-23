@@ -8,7 +8,7 @@ export default function Button (props: ButtonProps) {
   const isEqual = children == '=' ? 'equal' : ''
 
   const handleClick = () => {
-    setDisplay(() => [children])
+    setDisplay((prev) => [...prev, children])
   }
 
   return (
