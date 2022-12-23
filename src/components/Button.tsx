@@ -5,8 +5,12 @@ export default function Button (props: ButtonProps) {
   const isTall = children == '+' ? 'plus' : ''
   const isEqual = children == '=' ? 'equal' : ''
 
+  const handleClick = () => {
+    props.setDisplay([children])
+  }
+
   return (
-    <button className={`button ${isTall} ${isEqual}`}>
+    <button className={`button ${isTall} ${isEqual}`} onClick={handleClick}>
       {children}
     </button>
   )
