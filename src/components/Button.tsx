@@ -9,7 +9,7 @@ export default function Button (props: ButtonProps) {
 
   const handleClick = () => {
     if (children == 'C' || children == 'AC') {
-      setDisplay([0])
+      setDisplay([])
       return
     }
 
