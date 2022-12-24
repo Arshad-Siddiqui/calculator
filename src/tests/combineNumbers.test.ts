@@ -22,4 +22,9 @@ describe('combineNumbers', () => {
     const result3 = combineNumbers([1, 2, 3, 4, '5', '6', 7, 8, '9']);
     expect(result3).toEqual([1234, '5', '6', 78, '9']);
   });
+
+  it('should work when the strings do not represent numbers', () => {
+    const result = combineNumbers(['+', '-', 7, 8, 9, 'K']);
+    expect(result).toEqual(['+', '-', 789, 'K']);
+  })
 });
