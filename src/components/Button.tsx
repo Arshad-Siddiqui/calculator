@@ -1,11 +1,7 @@
 import ButtonProps from "../types/ButtonProps"
 import combineNumbers from "../lib/combineNumbers"
 
-export default function Button (props: ButtonProps) {
-  const children = props.children
-  const setDisplay = props.setDisplay
-  const display = props.display
-
+export default function Button ({ children, setDisplay, display }: ButtonProps) {
   const isTall = children == '+' ? 'plus' : ''
   const isEqual = children == '=' ? 'equal' : ''
 
