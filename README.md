@@ -10,6 +10,8 @@
 - React (TypeScript, Vite, Vitest)
 - HTML
 - CSS
+- ChatGPT-3 (https://chatgpt3.com/)
+- Github Copilot
 
 ## How to run
 
