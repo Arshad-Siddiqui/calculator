@@ -11,4 +11,9 @@ describe('combineNumbers', () => {
     const result = combineNumbers([1, '2', 3]);
     expect(result).toEqual([1, '2', 3]);
   });
+
+  it("Should combine numbers and not strings", () => {
+    const result = combineNumbers([1, 2, '3']);
+    expect(result).toEqual([12, '3']);
+  });
 });

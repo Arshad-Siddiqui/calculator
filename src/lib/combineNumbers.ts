@@ -1,6 +1,27 @@
 export default function combineNumbers(arr: (number | string)[]): (number | string)[] {
-  if (arr.some((item) => typeof item === 'string')) {
-    return arr;
+  const result: (number | string)[] = [];
+  let currentNumber: number | null = null;
+
+  for (const item of arr) {
+    if (typeof item === 'number') {
+      if (currentNumber === null) {
+        currentNumber = item;
+      } else {
+        currentNumber = currentNumber * 10 + item;
+      }
+    } else {
+      if (currentNumber !== null) {
+        result.push(currentNumber);
+        currentNumber = null;
+      }
+
+      result.push(item);
+    }
   }
-  return [123];
+
+  if (currentNumber !== null) {
+    result.push(currentNumber);
+  }
+
+  return result;
 }
