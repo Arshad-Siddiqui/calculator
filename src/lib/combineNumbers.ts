@@ -1,3 +1,3 @@
-export default function combineNumbers(arr: (number | string)[]): number {
-  return 0
+export default function combineNumbers(arr: (number | string)[]): (number | string)[] {
+  return [123];
 }

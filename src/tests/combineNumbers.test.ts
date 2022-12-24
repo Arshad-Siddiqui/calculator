@@ -4,6 +4,6 @@ import combineNumbers from '../lib/combineNumbers';
 describe('combineNumbers', () => {
   it('should combine numbers', () => {
     const result = combineNumbers([1, 2, 3]);
-    expect(result).toBe(123);
+    expect(result).toEqual([123]);
   });
 })
