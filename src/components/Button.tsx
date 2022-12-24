@@ -1,4 +1,5 @@
 import ButtonProps from "../types/ButtonProps"
+import combineNumbers from "../lib/combineNumbers"
 
 export default function Button (props: ButtonProps) {
   const children = props.children
@@ -13,7 +14,7 @@ export default function Button (props: ButtonProps) {
       return
     }
 
-    setDisplay((prev) => [...prev, children])
+    setDisplay((prev) => combineNumbers([...prev, children]))
   }
 
   return (
