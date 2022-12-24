@@ -17,3 +17,7 @@
 - Run `npm install`
 - Run `npm run dev`
 - Open `localhost:5173` in your browser
+
+## How to test
+
+- Run `npm run test`
