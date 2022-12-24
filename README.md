@@ -23,3 +23,7 @@
 ## How to test
 
 - Run `npm run test`
+
+## Screenshots
+
+![Image of Calculator](./images/calculator.png)
