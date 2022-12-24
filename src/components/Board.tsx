@@ -7,7 +7,7 @@ export default function Board() {
   return (
     <div className="board">
       <Display children={display}/>
-      <Numpad setDisplay={setDisplay}/>
+      <Numpad setDisplay={setDisplay} display={display}/>
     </div>
   );
 }
