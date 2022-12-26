@@ -20,7 +20,7 @@ export default function Button ({ children, setDisplay, display, calculator }: B
 
     if (children == '=') {
       if (display.length != 3) return console.error('Invalid equation length')
-      if (display[1] != '+' && display[1] != '-' && display[1] != 'x' && display[1] != '/') return console.error('Invalid operator')
+      if (display[1] != '+' && display[1] != '-' && display[1] != 'X' && display[1] != '/') return console.error('Invalid operator')
 
       const [num1, operator, num2] = display
 

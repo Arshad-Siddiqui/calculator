@@ -1,7 +1,7 @@
 const operatorToString = {
   '+': 'add',
   '-': 'subtract',
-  'x': 'multiply',
+  'X': 'multiply',
   '/': 'divide',
 }
 
