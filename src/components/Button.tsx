@@ -4,6 +4,7 @@ import { combineNumbers, operatorToString } from "../lib/formatNumbers"
 export default function Button ({ children, setDisplay, display, calculator }: ButtonProps) {
   const isTall = children == '+' ? 'plus' : ''
   const isEqual = children == '=' ? 'equal' : ''
+  const isWide = children == 'AC' ? 'ac' : ''
 
   const handleClick = () => {
     if (typeof children == 'string' && typeof display[display.length - 1] == 'string') {
@@ -33,7 +34,7 @@ export default function Button ({ children, setDisplay, display, calculator }: B
   }
 
   return (
-    <button className={`button ${isTall} ${isEqual}`} onClick={handleClick}>
+    <button className={`button ${isTall} ${isEqual} ${isWide}`} onClick={handleClick}>
       {children}
     </button>
   )

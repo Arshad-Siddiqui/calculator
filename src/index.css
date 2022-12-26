@@ -56,6 +56,10 @@ body {
   background-color: orange;
 }
 
+.ac {
+  grid-column: span 2;
+}
+
 .equal:hover {
   background-color: #f5a623;
 }
