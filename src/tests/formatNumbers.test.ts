@@ -27,4 +27,9 @@ describe('combineNumbers', () => {
     const result = combineNumbers(['+', '-', 7, 8, 9, 'K']);
     expect(result).toEqual(['+', '-', 789, 'K']);
   })
+
+  // it('should work with negative numbers', () => {
+  //   const result = combineNumbers(['-', 1, 2, '-', 5]);
+  //   expect(result).toEqual([-12, '-', 5]);
+  // })
 });
