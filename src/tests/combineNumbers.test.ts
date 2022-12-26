@@ -1,5 +1,5 @@
 import { it, describe, expect } from 'vitest';
-import combineNumbers from '../lib/combineNumbers';
+import { combineNumbers } from '../lib/formatNumbers';
 
 describe('combineNumbers', () => {
   it('should combine numbers', () => {
