@@ -1,6 +1,5 @@
 import ButtonProps from "../types/ButtonProps"
-import combineNumbers from "../lib/combineNumbers"
-import operatorToString from "../lib/operatorToString"
+import { combineNumbers, operatorToString } from "../lib/formatNumbers"
 
 export default function Button ({ children, setDisplay, display, calculator }: ButtonProps) {
   const isTall = children == '+' ? 'plus' : ''

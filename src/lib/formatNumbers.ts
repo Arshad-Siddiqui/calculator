@@ -1,4 +1,11 @@
-export default function combineNumbers(arr: (number | string)[]): (number | string)[] {
+export const operatorToString = {
+  '+': 'add',
+  '-': 'subtract',
+  'X': 'multiply',
+  '/': 'divide',
+}
+
+export function combineNumbers(arr: (number | string)[]): (number | string)[] {
   const result: (number | string)[] = [];
   let currentNumber: number | null = null;
 
