@@ -24,7 +24,12 @@ export default function Button ({ children, setDisplay, display, calculator }: B
 
       const [num1, operator, num2] = display
 
-      const result = calculator[operatorToString[operator]](num1, num2)
+      const stringOperator = operatorToString[operator]
+      if (stringOperator != 'add' && stringOperator != 'subtract' && stringOperator != 'divide' && stringOperator != 'multiply') return console.error('Invalid operator')
+
+      if (typeof num1 != 'number' || typeof num2 != 'number') return console.error('Invalid number');
+
+      const result = calculator[stringOperator](num1, num2)
       setDisplay([result])
       return;
     }
