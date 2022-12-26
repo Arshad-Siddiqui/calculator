@@ -1,7 +1,7 @@
 import ButtonProps from "../types/ButtonProps"
 import combineNumbers from "../lib/combineNumbers"
 
-export default function Button ({ children, setDisplay, display }: ButtonProps) {
+export default function Button ({ children, setDisplay, display, calculator }: ButtonProps) {
   const isTall = children == '+' ? 'plus' : ''
   const isEqual = children == '=' ? 'equal' : ''
 
