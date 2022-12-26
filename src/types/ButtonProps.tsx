@@ -1,4 +1,4 @@
-import Calculator from '../classes/Calculator';
+import Calculator from '../lib/Calculator';
 
 export default interface ButtonProps {
   children: number | string;

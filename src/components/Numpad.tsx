@@ -1,7 +1,7 @@
 import Button from "./Button";
 import contents from "../data/ButtonContents.json";
 import NumpadProps from "../types/NumpadProps";
-import Calculator from "../classes/Calculator";
+import Calculator from "../lib/Calculator";
 
 export default function Numpad ({ setDisplay, display }: NumpadProps) {
   const calculator = new Calculator();
