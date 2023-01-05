@@ -1,4 +1,4 @@
-import ButtonProps from "../types/ButtonProps"
+import ButtonProps from "../types/buttonProps"
 import { combineNumbers, operatorToString } from "../lib/formatNumbers"
 
 export default function Button ({ children, setDisplay, display, calculator }: ButtonProps) {
