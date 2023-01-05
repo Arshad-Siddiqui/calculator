@@ -1,10 +1,8 @@
 import ButtonProps from "../types/buttonProps"
 import { combineNumbers, operatorToString } from "../lib/formatNumbers"
+import buttonStyle from "../lib/buttonStyle"
 
 export default function Button ({ children, setDisplay, display, calculator }: ButtonProps) {
-  const isTall = children == '+' ? 'plus' : ''
-  const isEqual = children == '=' ? 'equal' : ''
-  const isWide = children == 'AC' ? 'ac' : ''
 
   const handleClick = () => {
     if (typeof children == 'string' && typeof display[display.length - 1] == 'string') {
@@ -38,8 +36,9 @@ export default function Button ({ children, setDisplay, display, calculator }: B
     console.log(display);
   }
 
+  const optionalStyles = buttonStyle(children)
   return (
-    <button className={`button ${isTall} ${isEqual} ${isWide}`} onClick={handleClick}>
+    <button className={`button ${optionalStyles}`} onClick={handleClick}>
       {children}
     </button>
   )
