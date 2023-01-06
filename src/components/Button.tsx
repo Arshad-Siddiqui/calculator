@@ -20,7 +20,7 @@ export default function Button({
       return;
     }
 
-    if (children == "C" || children == "AC") {
+    if (children == "AC") {
       setDisplay([]);
       return;
     }
