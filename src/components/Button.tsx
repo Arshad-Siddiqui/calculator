@@ -12,15 +12,11 @@ export default function Button({
 }: ButtonProps) {
   const handleClick = () => {
     if (
-      typeof children == "string" &&
-      typeof display[display.length - 1] == "string"
+      (typeof children == "string" &&
+        typeof display[display.length - 1] == "string") ||
+      children == "AC"
     ) {
       // Resets the calculator in case of a double operator
-      setDisplay([]);
-      return;
-    }
-
-    if (children == "AC") {
       setDisplay([]);
       return;
     }
