@@ -1,8 +1,7 @@
 import ButtonProps from "../types/buttonProps";
-import { combineNumbers } from "../lib/formatNumbers";
+import { combineNumbers, operatorToString } from "../lib/formatNumbers";
 import buttonStyle from "../lib/buttonStyle";
 import validEquation from "../lib/validEquation";
-import { operatorToString } from "../lib/formatNumbers";
 
 export default function Button({
   children,
