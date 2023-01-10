@@ -1,4 +1,4 @@
-import DisplayProps from "../types/DisplayProps"
+import DisplayProps from "../types/displayProps"
 
 export default function Display (props: DisplayProps) {
   return (
