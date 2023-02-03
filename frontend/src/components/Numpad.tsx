@@ -1,17 +1,25 @@
 import Button from "./Button";
-import contents from "../data/ButtonContents.json";
-import NumpadProps from "../types/numpadProps";
 
-export default function Numpad ({ setDisplay, display }: NumpadProps) {
+export default function Numpad () {
+  
+  const numbers: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+  const operators: Array<string> = ['+', '-', '*', '/', "%"]
+  const clear: Array<string> = ['C']
+  const equals: Array<string> = ['=']
+  
+  
   return (
     <div className="numpad">
-      {contents.map((content, index) => {
-        return (
-          <Button key={index} setDisplay={setDisplay} display={display} >
-            {content}
-          </Button>
-        );
-      })}
+      {
+        numbers.map((number) => {
+          return (
+            <Button
+              key={number}
+              value={number}
+            />
+          )
+        })
+        }
     </div>
   );
 }
