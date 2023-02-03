@@ -27,3 +27,7 @@
 ## Screenshots
 
 ![Image of Calculator](./images/calculator.png)
+
+## Packages to look at
+
+- MathJS (https://mathjs.org/)
