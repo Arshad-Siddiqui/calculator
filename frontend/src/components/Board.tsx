@@ -9,7 +9,7 @@ export default function Board() {
     <div className="board">
       <Display display={display}/>
       <Numpad setDisplay={setDisplay} display={display}/>
-      <Operators />
+      <Operators setDisplay={setDisplay} />
     </div>
   );
 }

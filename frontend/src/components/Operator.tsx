@@ -1,7 +1,13 @@
-export default function Operator ({ value }: { value: string}) {
-  const handleClick = () => {}
+export default function Operator({
+  value,
+  setDisplay,
+}: {
+  value: string;
+  setDisplay: Function;
+}) {
+  const handleClick = () => {
+    setDisplay((prev: string[]) => [...prev, value]);
+  };
 
-  return (
-    <button onClick={handleClick}>{value}</button>
-  );
+  return <button onClick={handleClick}>{value}</button>;
 }
