@@ -7,7 +7,7 @@ export default function Board() {
   const [display, setDisplay] = useState<(string)[]>([]);
   return (
     <div className="board">
-      <Display children={display}/>
+      <Display display={display}/>
       <Numpad setDisplay={setDisplay} display={display}/>
       <Operators />
     </div>

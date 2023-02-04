@@ -1,9 +1,7 @@
-import DisplayProps from "../types/displayProps"
-
-export default function Display (props: DisplayProps) {
+export default function Display (props: {display: (string)[]}) {
   return (
     <div className="display">
-      {props.children.join('') || 0}
+      {props.display.join('') || 0}
     </div>
   )
 }
