@@ -9,5 +9,9 @@ export default function Equals({
   const handleClick = () => {
     setDisplay((prev: string[]) => [evaluate(prev.join(""))]);
   };
-  return <button onClick={handleClick}>=</button>;
+  return (
+    <button className="equal" onClick={handleClick}>
+      =
+    </button>
+  );
 }

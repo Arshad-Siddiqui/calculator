@@ -9,5 +9,10 @@ export default function Operator({
     setDisplay((prev: string[]) => [...prev, value]);
   };
 
-  return <button onClick={handleClick}>{value}</button>;
+  const isPlus = value === "+" ? "plus" : "";
+  return (
+    <button onClick={handleClick} className={isPlus}>
+      {value}
+    </button>
+  );
 }
