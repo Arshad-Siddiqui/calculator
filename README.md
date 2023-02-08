@@ -26,7 +26,7 @@
 
 ## Screenshots
 
-![Image of Calculator](./images/calculator.png)
+![Image of Calculator](./frontend/images/calculator.png)
 
 ## Packages to look at
 
