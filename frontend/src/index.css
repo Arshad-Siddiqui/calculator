@@ -66,3 +66,7 @@ button {
   display: flex;
   flex-direction: row;
 }
+
+.zero {
+  grid-column: span 2;
+}

@@ -10,5 +10,6 @@ export default function Number({
     console.log(value);
   };
 
-  return <button onClick={handleClick}>{value}</button>;
+  const isZero = value === "0" ? "zero" : "";
+  return <button className={isZero} onClick={handleClick}>{value}</button>;
 }
