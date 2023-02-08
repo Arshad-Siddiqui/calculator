@@ -33,7 +33,20 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.numpad button {
+.numpad button:hover {
+  background-color: #3c4145;
+}
+
+.numpad button:active {
+  background-color: #080707;
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+button {
   background-color: #080707;
   color: #FAF9F6;
   font-size: 1.5rem;
@@ -42,12 +55,4 @@ body {
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.numpad button:hover {
-  background-color: #3c4145;
-}
-
-.numpad button:active {
-  background-color: #080707;
 }
