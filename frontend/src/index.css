@@ -56,3 +56,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.plus {
+  background-color: orange;
+  grid-row: span 2;
+}
