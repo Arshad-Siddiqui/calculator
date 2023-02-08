@@ -11,7 +11,7 @@ export default function Operator({
 
   const isPlus = value === "+" ? "plus" : "";
   return (
-    <button onClick={handleClick} className={isPlus}>
+    <button onClick={handleClick} className={`operator ${isPlus}`} >
       {value}
     </button>
   );

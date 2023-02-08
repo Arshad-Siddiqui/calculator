@@ -30,46 +30,24 @@ body {
 
 .numpad {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.button {
+.numpad button {
   background-color: #080707;
   color: #FAF9F6;
   font-size: 1.5rem;
   border: none;
-  padding: 20px;
+  padding: 10px;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: #1f1c1c;
+.numpad button:hover {
+  background-color: #3c4145;
 }
 
-.button:active {
-  background-color: orange;
-  color: white;
-}
-
-.plus {
-  grid-row: span 2;
-}
-
-.equal {
-  background-color: orange;
-}
-
-.ac {
-  grid-column: span 2;
-}
-
-.equal:hover {
-  background-color: #f5a623;
-}
-
-.equal:active {
-  background-color: #000000;
-  color: white;
+.numpad button:active {
+  background-color: #080707;
 }

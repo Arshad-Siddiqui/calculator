@@ -8,8 +8,8 @@ export default function Board() {
   return (
     <div className="board">
       <Display display={display}/>
-      <Numpad setDisplay={setDisplay} display={display}/>
       <Operators setDisplay={setDisplay} />
+      <Numpad setDisplay={setDisplay} display={display}/>
     </div>
   );
 }
