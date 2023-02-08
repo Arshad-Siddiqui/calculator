@@ -61,3 +61,8 @@ button {
   background-color: orange;
   grid-row: span 2;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
