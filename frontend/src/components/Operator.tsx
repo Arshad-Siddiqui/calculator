@@ -6,12 +6,18 @@ export default function Operator({
   setDisplay: Function;
 }) {
   const handleClick = () => {
-    setDisplay((prev: string[]) => [...prev, value]);
+    setDisplay((prev: string[]) => {
+      if (prev[prev.length - 1] === "/" || prev[prev.length - 1] === "*") {
+        return [...prev.slice(0, -1), value];
+      }
+
+      return [...prev, value];
+    });
   };
 
   const isPlus = value === "+" ? "plus" : "";
   return (
-    <button onClick={handleClick} className={`operator ${isPlus}`} >
+    <button onClick={handleClick} className={`operator ${isPlus}`}>
       {value}
     </button>
   );
