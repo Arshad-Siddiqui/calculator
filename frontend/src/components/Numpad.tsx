@@ -20,6 +20,7 @@ export default function Numpad({
     "8",
     "9",
     "0",
+    ".",
   ];
 
   return (
