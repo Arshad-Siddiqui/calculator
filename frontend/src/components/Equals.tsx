@@ -7,7 +7,20 @@ export default function Equals({
   setDisplay: Function;
 }) {
   const handleClick = () => {
-    setDisplay((prev: string[]) => [evaluate(prev.join(""))]);
+    setDisplay((prev: string[]) => {
+      if (prev.length === 0) return [];
+      if (prev[prev.length - 1] === "+" || prev[prev.length - 1] === "-") {
+        return [...prev, "0"];
+      }
+
+      if (prev[prev.length - 1] === "*" || prev[prev.length - 1] === "/") {
+        return [...prev, "1"];
+      }
+
+      
+
+      return [evaluate(prev.join(""))];
+    });
   };
   return (
     <button className="equal" onClick={handleClick}>
