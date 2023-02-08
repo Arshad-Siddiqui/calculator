@@ -17,7 +17,9 @@ export default function Equals({
         return [...prev, "1"];
       }
 
-      
+      if (prev[prev.length - 1] === ".") {
+        return [...prev, "0"];
+      }
 
       return [evaluate(prev.join(""))];
     });
