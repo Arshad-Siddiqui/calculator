@@ -1,6 +1,5 @@
 import Number from "./Number";
 import Equals from "./Equals";
-import Clear from "./Clear";
 
 export default function Numpad({
   setDisplay,
