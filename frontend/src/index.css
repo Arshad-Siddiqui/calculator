@@ -46,6 +46,16 @@ body {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.operator {
+  font-size: 1.5rem;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: grey;
+}
+
 button {
   background-color: #080707;
   color: #FAF9F6;
@@ -75,4 +85,8 @@ button {
 .top {
   display: flex;
   flex-direction: row;
+}
+
+.clear {
+  background-color: red;
 }
