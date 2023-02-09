@@ -28,6 +28,12 @@
 
 ![Image of Calculator](./frontend/images/calculator.png)
 
+![Image of second attempt](./frontend/images/calculator2.png)
+
 ## Packages to look at
 
 - MathJS (https://mathjs.org/)
+
+## What needs to be fixed
+
+- Grid spacing for top buttons.
