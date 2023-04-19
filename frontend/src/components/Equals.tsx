@@ -1,6 +1,7 @@
 import { evaluate } from "mathjs";
 
 export default function Equals({
+  display,
   setDisplay,
 }: {
   display: string[];
@@ -8,17 +9,12 @@ export default function Equals({
 }) {
   const handleClick = () => {
     setDisplay((prev: string[]) => {
-      if (prev.length === 0) return [];
-      if (prev[prev.length - 1] === "+" || prev[prev.length - 1] === "-") {
-        return [...prev, "0"];
-      }
+      if (display[0] == "Error") return ["0"];
 
-      if (prev[prev.length - 1] === "*" || prev[prev.length - 1] === "/") {
-        return [...prev, "1"];
-      }
-
-      if (prev[prev.length - 1] === ".") {
-        return [...prev, "0"];
+      try {
+        evaluate(prev.join(""));
+      } catch (e) {
+        return ["Error"];
       }
 
       return [evaluate(prev.join(""))];
