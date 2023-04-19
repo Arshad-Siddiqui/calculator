@@ -25,7 +25,14 @@ export default function Numpad({
   return (
     <div className="numpad">
       {numbers.map((number) => {
-        return <Number key={number} value={number} setDisplay={setDisplay} />;
+        return (
+          <Number
+            key={number}
+            value={number}
+            setDisplay={setDisplay}
+            display={display}
+          />
+        );
       })}
       <Equals display={display} setDisplay={setDisplay} />
     </div>
