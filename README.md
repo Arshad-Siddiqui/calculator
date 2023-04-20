@@ -1,4 +1,7 @@
 # Calculator
+
+Access the deployed version [here](https://loquacious-mochi-b153ce.netlify.app/)
+
 ## Goals
 
 - Create a simple calculator web app.
